@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <title>{{ book.book_name }}</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__row">
+                    {{ book.book_name }}
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <div class="ad ad__footer">
+                <p id="title">Курсы</p>
+                <img src="img/ad.png" alt="Курсы">
+                <p>Овладевай знаниями английского языка и присоединяйся к нашей команде!</p>
+                <a href="https://eng.skillbox.ru/" title="Перейти к курсам" target="_blank">Перейти</a>
+            </div>
+            <div class="container">
+                <div class="block">
+                    <div class="block__row">
+                            <div class="block__container">
+                                <div class="block__container__body">
+                                    <div class="alert">
+                                        <div style="font-size: 24px;">{{ author }}</div>
+                                        <div style="font-size: 30px; margin: 0 0 15px 0; padding: 0 0 3px 0; border-bottom: 1px solid black">«{{ book.book_name }}»</div>
+                                        <p style="font-size: 20px">Жанр: {{ genre }}</p>
+                                        <p>•</p>
+                                        <p style="font-size: 17px; padding: 0 10px">{{ book.book_text }}</p>
+                                        <p>•</p>
+                                        <p style="font-size: 18px">Дата публикации: {{ book.book_release_date.date() }}</p>
+                                        <p>•</p>
+                                        <a href="/book-list/{{ book_id }}/delete" class="but">Удалить данную книгу</a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="up up__hide">
+        </div>
+        <footer class="footer">
+            <div class="footer__row">
+                <div class="footer__left">
+                    ©️ «BashTranslators», 2023
+                </div>
+                <div class="footer__right">
+                    <p>Вы всегда можете связаться с <a href="/contacts" style="border-bottom: 1px solid black">нами</a>!</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

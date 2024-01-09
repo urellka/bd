@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <title>Добавление записи</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__row">
+                    Добавление жанра
+                </div>
+            </div>
+        </header>
+        <nav class="menu">
+            <ul class="menu__list">
+                <li><a href="index" title="Главная" class="menu__link">Главная</a></li>
+                <li><a href="about" title="О компании" class="menu__link">О компании</a></li>
+                <li><a href="book-list" title="Список книг" class="menu__link">Список книг</a></li>
+                <li><a href="contacts" title="Контакты" class="menu__link">Контакты</a></li>
+                <li><a class="menu__link">Добавить книгу</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <div class="ad ad__header">
+                <p id="title">Курсы</p>
+                <img src="static/img/ad.png" alt="Курсы">
+                <p>Овладевай знаниями английского языка и присоединяйся к нашей команде!</p>
+                <a href="https://eng.skillbox.ru/" title="Перейти к курсам" target="_blank">Перейти</a>
+            </div>
+            <div class="request">
+                <div class="container">
+                    <div class="request__container">
+                        <div class="request__row">
+                            <a href='create-book' class="add__author">
+                                <p class="add__author__p">Вернуться</p>
+                            </a>
+                            <div class="request__title">
+                                Ниже вы можете добавить новый книжный жанр на сайт
+                            </div>
+                            <div class="request__body">
+                                <form method="post">
+                                    <p>Введите название жанра</p>
+                                    <input type="text" name="new_genre" id="new_genre" class="author"><br>
+                                    <p>Нажмите, чтобы добавить жанр</p>
+                                    <input type="submit" value="Добавить" class="but">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ad ad__footer">
+                <p id="title">Курсы</p>
+                <img src="img/ad.png" alt="Курсы">
+                <p>Овладевай знаниями английского языка и присоединяйся к нашей команде!</p>
+                <a href="https://eng.skillbox.ru/" title="Перейти к курсам" target="_blank">Перейти</a>
+            </div>
+        </div>
+        <div class="up up__hide">
+        </div>
+        <footer class="footer">
+            <div class="footer__row">
+                <div class="footer__left">
+                    ©️ «BashTranslators», 2023
+                </div>
+                <div class="footer__right">
+                    <p>Вы всегда можете связаться с нами!</p>
+                    <a href="tel:+79999999999" title="+79999999999" target="_blank"><img src="static/img/phone.png" alt=""></a>
+                    <a href="https://t.me/urelllka" title="Telegram" target="_blank"><img src="static/img/telegram.png" alt="Иконка"></a>
+                    <a href="https://vk.com/ural_khayrizamanov" title="ВКонтакте" target="_blank"><img src="static/img/vk.png" alt="Иконка"></a>
+                    <a href="https://wa.me/79674566010" title="WhatsApp" target="_blank"><img src="static/img/whatsapp.png" alt="Иконка"></a>
+                    <a href="mailto:mail@x.ural@mail.ru" title="Почта" target="_blank"><img src="static/img/mail.png" alt="Иконка"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

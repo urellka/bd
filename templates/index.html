@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <title>Главная</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__row">
+                    <img src="static/img/logo.png" alt="Логотип">
+                    BashTranslators
+                </div>
+            </div>
+        </header>
+        <nav class="menu">
+            <ul class="menu__list">
+                <li><a class="menu__link">Главная</a></li>
+                <li><a href="about" title="О компании" class="menu__link">О компании</a></li>
+                <li><a href="book-list" title="Список книг" class="menu__link">Список книг</a></li>
+                <li><a href="contacts" title="Контакты" class="menu__link">Контакты</a></li>
+                <li><a href="create-book" title="Карта сайта" class="menu__link">Добавить книгу</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <div class="ad ad__header">
+                <p id="title">Курсы</p>
+                <img src="static/img/ad.png" alt="Курсы">
+                <p>Овладевай знаниями английского языка и присоединяйся к нашей команде!</p>
+                <a href="https://eng.skillbox.ru/" title="Перейти к курсам" target="_blank">Перейти</a>
+            </div>
+            <div class="banner">
+                <div class="container">
+                    <div class="banner__container">
+                        <div class="banner__container__text">
+                           Наша команда «BashTranslators» занимается переводом книг с иностранных языков на русский. Щелкнув на кнопку ниже, вы сможете подробно ознакомиться с каждым произведением, которое мы перевели. Процесс перевода текстов всегда делится на несколько этапов, и ознакомиться с ними вы так же можете ниже!
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="literature">
+                <div class="container">
+                    <div class="literature__container">
+                        <a href='book_list.html' title="Список книг" target="_blank" class="literature__container__text">
+                            Перейти к списку произведений
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="process">
+                <div class="container">
+                    <div class="process__container">
+                        <div class="process__title">
+                            Процесс перевода
+                        </div>
+                        <div class="process__stages first__stage">
+                            I Этап: подготовка к переводу
+                        </div>
+                        <img src="static/img/down_arrow.png" alt="Стрелка вниз">
+                        <div class="process__steps__container">
+                            <div class="process__steps">
+                                1. Сбор внешних сведений о тексте, его авторе и времени создания текста.
+                            </div>
+                            <div class="process__steps">
+                                2. Определение содержательного состава текста и его темы.
+                            </div>
+                            <div class="process__steps">
+                                3. Выявление коммуникативного задания текста, определение функциональной направленности.
+                            </div>
+                            <div class="process__steps">
+                                4. Установление стилистической и жанровой принадлежности переводимого текста.
+                            </div>
+                            <div class="process__steps">
+                                5. Определение состава информации и ее плотности с целью правильной оценки особенностей текста на всех уровнях: лексическом, графическом и синтаксическом.
+                            </div>
+                        </div>
+                        <div class="process__stages second__stage">
+                            II Этап: перевод текста
+                        </div>
+                        <img src="static/img/down_arrow.png" alt="Стрелка вниз">
+                        <div class="process__steps__container">
+                            <div class="process__steps alone__step">
+                                К переводу текста все подготовлено, поэтому на данном этапе происходит сам перевод. Количество времени, занимаемое процессом, зависит от объема текста, но в среднем длится два месяца.
+                            </div>
+                        </div>
+                        <div class="process__stages third__stage">
+                            III Этап: правка текста
+                        </div>
+                        <img src="static/img/down_arrow.png" alt="Стрелка вниз">
+                        <div class="process__steps__container">
+                            <div class="process__steps alone__step">
+                                На третьем этапе происходит выявление и корректировка переводческих ошибок, которые чаще всего возникают по причине разности языковых систем, речевых норм и различных лингвострановедческих фоновых знаний.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ad ad__footer">
+                <p id="title">Курсы</p>
+                <img src="img/ad.png" alt="Курсы">
+                <p>Овладевай знаниями английского языка и присоединяйся к нашей команде!</p>
+                <a href="https://eng.skillbox.ru/" title="Перейти к курсам" target="_blank">Перейти</a>
+            </div>
+        </div>
+        <div class="up up__hide">
+        </div>
+        <footer class="footer">
+            <div class="footer__row">
+                <div class="footer__left">
+                    ©️ «BashTranslators», 2023
+                </div>
+                <div class="footer__right">
+                    <p>Вы всегда можете связаться с нами!</p>
+                    <a href="tel:+79999999999" title="+79999999999" target="_blank"><img src="static/img/phone.png" alt=""></a>
+                    <a href="https://t.me/urelllka" title="Telegram" target="_blank"><img src="static/img/telegram.png" alt="Иконка"></a>
+                    <a href="https://vk.com/ural_khayrizamanov" title="ВКонтакте" target="_blank"><img src="static/img/vk.png" alt="Иконка"></a>
+                    <a href="https://wa.me/79674566010" title="WhatsApp" target="_blank"><img src="static/img/whatsapp.png" alt="Иконка"></a>
+                    <a href="mailto:mail@x.ural@mail.ru" title="Почта" target="_blank"><img src="static/img/mail.png" alt="Иконка"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
